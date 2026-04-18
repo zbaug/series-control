@@ -1,0 +1,24 @@
+# Pyproject.toml: Project settings for the installation of the package
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serctl" # Command to initialize the program
+version = "0.1.0" # Version project that should be change every time is updated
+description = "REPL to manage and rate series."
+readme = "README.md"
+# Requirements
+requires-python = ">=3.10"
+dependencies = [
+    "InquirerPy>=0.3.4",
+    "platformdirs>=4.0.0",
+]
+
+[project.scripts]
+serctl = "src.main:main" # Path where the main function are going to be started
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
