@@ -13,9 +13,6 @@ A terminal-based REPL tool to manage and rate TV series of your own preference.
 - [OMDb API Key](#omdb-api-key)
 - [Contributing](#contributing)
 
-
-### Showcase
-
 ### Features
 * Add series and organize them by seasons and episodes
 * Rate episodes individually or all at once (0 to 10, up to 2 decimal places)
