@@ -23,7 +23,7 @@ def _formatRatingCell(rating):
     if rating is None:
         visible_length = 1  # "-" is 1 character
     else:
-        visible_length = len(str(round(rating, 1)))
+        visible_length = len(str(round(rating, 2)))
     # Fill the rest of the cell with spaces to keep all cells the same width
     padding = 7 - visible_length
     return value + (" " * padding)

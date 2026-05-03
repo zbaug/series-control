@@ -47,7 +47,7 @@ def putRatingsToEpisodes(series):
     ).execute()
 
     # episodeToRate gets the number of the episode selected by the user, removing the "E" at the beginning of the string
-    episodeToRate = int(episodeChoice[1:])
+    episodeToRate = int(episodeChoice[1:].split()[0])
 
     print(f" The season {seasonNumber} of {serieName} has {len(episodes)} episodes.\n")
 

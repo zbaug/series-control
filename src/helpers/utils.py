@@ -53,7 +53,7 @@ def getRatingColor(rating):
     if rating is None:
         return "-"
 
-    rating = round(rating, 1)
+    rating = round(rating, 2)
 
     # Cyan: 9.7 - 10
     if rating >= 9.7:
